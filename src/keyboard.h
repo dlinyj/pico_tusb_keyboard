@@ -22,7 +22,8 @@ class KeyBoard
 private:
 	// ===========================================================================
 	// set these values to your situation
-	const static size_t num_pins = 26;
+	//const static size_t num_pins = 26;
+	const static size_t num_pins = 27;
 	const PinKey pin_keys[num_pins] = { // map gpio pin to keycode
 		{0, HID_KEY_1},             // 1 player
 		{1, HID_KEY_5},             // coin slot 1
@@ -47,6 +48,7 @@ private:
 		{20, HID_KEY_C},            // button 7
 		{21, HID_KEY_V},            // button 8
 		{22, HID_KEY_ENTER},        // select
+		{24, HID_KEY_A},            // buttun_usr = 'A'
 		{26, HID_KEY_ESCAPE},       // back
 		{27, HID_KEY_SHIFT_RIGHT},
 		{28, HID_KEY_BACKSPACE}
